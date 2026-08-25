@@ -4,9 +4,8 @@ Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), 
 
 Este projeto é desenvolvido pelos seguintes alunos:
 
-- Nome Componente 1
-- Nome Componente 2
-- Nome Componente 3
+- Lauanda
+- Lars Tatebe Osiro
 
 ## Conhecendo o problema
 
