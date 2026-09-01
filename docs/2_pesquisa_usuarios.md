@@ -1,54 +1,79 @@
-# Pesquisa e Coleta de Dados com Usuários
+# Pesquisa e coleta de dados com usuários
 
-> **_NOTE:_**: O objetivo desta entrega é planejar e registrar como a equipe vai ouvir os usuários reais (ou representativos do público-alvo) antes de avançar para personas e cenários. Não é para relatar impressões da equipe — é para descrever o que será perguntado, para quem, como e por quê.
+## 1) Identificação de necessidades dos usuários e requisitos de UX
 
-1) **Identificação de Necessidades dos Usuários e Requisitos de UX**
-- Que dados coletar? (comportamentos, dores, expectativas, contexto de uso, frequência de uso, nível de familiaridade com tecnologia, etc.)
-- De quem coletar? (perfil do público-alvo e critérios de seleção dos participantes — quantos, onde encontrá-los)
+A pesquisa foi realizada com o objetivo de compreender os hábitos, comportamentos, dificuldades e expectativas das pessoas em relação ao acompanhamento das finanças pessoais. A partir dos dados coletados, identificamos necessidades que devem orientar o desenvolvimento do projeto.
 
-2) **Aspectos Éticos**
-- Seu projeto deverá considerar aspectos éticos? Justifique usando os conceitos da aula.
-- Como o consentimento dos participantes será obtido (termo de consentimento)?
-- Como os dados coletados serão armazenados, anonimizados e descartados, considerando a LGPD?
+### Que dados coletar?
 
-3) **Ferramentas de Coleta de Dados (três técnicas diferentes)**
+- frequência com que os usuários acompanham suas finanças;
+- formas utilizadas para registrar gastos e receitas;
+- uso de categorias e organização financeira;
+- principais dificuldades no controle de despesas;
+- informações considered as mais importantes ao consultar o saldo;
+- preferências de visualização dos dados;
+- experiência com aplicativos financeiros;
+- funcionalidades desejadas para facilitar o uso diário.
 
-> **_NOTE:_**: Escolher técnicas complementares (ex.: uma qualitativa individual, uma qualitativa em grupo, uma quantitativa), não três variações da mesma técnica.
+### De quem coletar?
 
-Para cada instrumento, apresente:
-- Nome do instrumento e objetivo de aplicação
-- Explicar como aplicar (serve para normalizar o processo de aplicação quando pessoas distintas aplicam o instrumento)
-- Instrumento (por exemplo, link do questionário no Google Forms, roteiro de entrevista, roteiro do Grupo Focal, etc)
+A pesquisa foi aplicada a 8 participantes, principalmente pessoas entre 18 e 44 anos, com interesse em organizar melhor suas finanças pessoais. O foco foi em usuários com rotina diária e necessidade de acompanhar gastos e receitas de maneira prática.
 
----
+## 2) Aspectos éticos
 
-## Exemplo de entrega
+Sim, a pesquisa considera aspectos éticos relevantes, especialmente a coleta de dados pessoais e comportamentais. A equipe deve respeitar a confidencialidade das informações e garantir que a participação seja voluntária.
 
-> O exemplo abaixo é fictício — usa como cenário um app universitário de organização de grupos de estudo ("Estuda+") apenas para ilustrar o **nível de detalhe e formato** esperado. Não copie o conteúdo, copie a estrutura.
+### Procedimentos adotados
 
-### 1) Identificação de Necessidades dos Usuários e Requisitos de UX
+- o aceite do participante foi obtido antes da coleta de dados;
+- as respostas foram tratadas de forma anônima;
+- os dados foram utilizados apenas para fins acadêmicos e de análise do projeto;
+- a participação poderia ser interrompida a qualquer momento, sem penalidade;
+- os dados coletados foram armazenados de maneira segura e com cuidado para atender aos princípios da LGPD.
 
-**Que dados coletar?**
-- Como os alunos hoje organizam sessões de estudo em grupo (ferramentas usadas, frequência).
-- Principais dificuldades para combinar horários e manter o grupo engajado.
-- Expectativas sobre lembretes, divisão de tópicos de estudo e acompanhamento de progresso.
+Esses cuidados são fundamentais para garantir transparência, respeito à privacidade e conformidade com as normas de pesquisa envolvendo seres humanos.
 
-**De quem coletar?**
-- Alunos de graduação de Ciência da Computação, do 2º ao 6º semestre, que já participaram de pelo menos um grupo de estudo nos últimos 6 meses.
-- Amostra mínima: 8 alunos para entrevistas, 40 respostas para o questionário.
-- Recrutamento: convite em grupos de turma no WhatsApp/Discord.
+## 3) Ferramentas de coleta de dados
 
-### 2) Aspectos Éticos
-
-Sim, o projeto envolve dados pessoais de participantes (nome, e-mail, respostas sobre hábitos de estudo), portanto:
-- Será aplicado um **Termo de Consentimento Livre e Esclarecido (TCLE)** antes de qualquer coleta, explicando objetivo da pesquisa, uso dos dados e direito de desistência a qualquer momento.
-- Os dados serão coletados de forma **anonimizada** (sem nome/e-mail nas respostas do questionário) e armazenados apenas na equipe, em conformidade com a LGPD (Lei n.º 13.709/2018).
-- Gravações de entrevista serão apagadas ao final do projeto, mantendo-se apenas as transcrições anonimizadas usadas na análise.
-
-### 3) Ferramentas de Coleta de Dados
+A pesquisa principal foi quantitativa, mas o processo também pode ser complementado por outras técnicas qualitativas para melhor compreender as necessidades dos usuários.
 
 | Instrumento | Objetivo | Como aplicar | Link/Roteiro |
 | :---- | :---- | :---- | :---- |
-| **Entrevista semiestruturada** | Entender em profundidade como os alunos organizam e mantêm grupos de estudo, e onde o processo falha. | Sessão individual de 20-30 min, presencial ou por chamada de vídeo. Seguir o roteiro fixo, mas permitir perguntas de aprofundamento ("por quê?", "pode dar um exemplo?"). Gravar com autorização e transcrever depois. | Roteiro: 1) Como você organiza sessões de estudo hoje? 2) Conte sobre a última vez que um grupo de estudo não funcionou. 3) O que faria você usar um app específico para isso? |
-| **Questionário (Google Forms)** | Quantificar ferramentas usadas, frequência de grupos de estudo e principais frustrações, em uma amostra maior. | Divulgar o link em grupos de turma, aberto por 1 semana. Sem identificação pessoal, tempo estimado de resposta de 5 min. | `https://forms.google.com/exemplo-estuda-mais` *(placeholder — substituir pelo link real)* |
-| **Grupo focal** | Observar a discussão entre alunos sobre o que tornaria um grupo de estudo "bom", captando divergências de opinião difíceis de obter em entrevista individual. | Sessão única com 5-6 alunos, 45 min, mediada por um membro da equipe seguindo um roteiro de tópicos, com outro membro registrando anotações. | Roteiro de tópicos: hábitos atuais, ferramentas testadas e abandonadas, o que faria o grupo "durar" até a prova. |
+| **Questionário online** | Coletar dados sobre hábitos financeiros, dificuldades e preferências de uso em uma amostra maior. | Aplicar em formulário digital, com tempo estimado de 5 a 10 minutos, sem pedir identificação pessoal. | Questionário com perguntas sobre frequência de acompanhamento, uso de categorias, dificuldades e funcionalidades desejadas. |
+| **Entrevista semiestruturada** | Entender melhor as dores e motivações dos usuários em contexto pessoal. | Realizar entrevistas curtas com 1 ou 2 participantes, permitindo aprofundar respostas e explorar motivos. | Roteiro: como você organiza suas finanças hoje? O que te frustra no processo? O que faria você usar um app financeiro com frequência? |
+| **Observação de uso / diário de rotina** | Observar como o usuário realiza a gestão financeira no cotidiano e em quais momentos o problema aparece. | Pedir que o participante registre situações de compra, consulta de saldo e acompanhamento de gastos em um período curto. | Registro de atividades do dia a dia e apontamentos sobre dificuldades e decisões financeiras. |
+
+## Resultados principais da pesquisa quantitativa
+
+A pesquisa foi aplicada com 8 participantes e revelou que:
+
+- 100% dos participantes acompanham suas finanças em algum nível;
+- o registro rápido foi considerado importante por 100% dos entrevistados;
+- 62,5% indicaram como prioridade poucas etapas no processo;
+- 62,5% valorizaram relatórios claros;
+- 62,5% priorizaram busca rápida;
+- 62,5% citaram possibilidade de personalização;
+- 62,5% preferem listas de movimentações e gráficos como formas de visualização;
+- 37,5% preferem resumos numéricos e tabelas;
+- 25% utilizam calendário como forma de organização.
+
+## Informações mais relevantes para o projeto
+
+Entre os dados mais relevantes, destacaram-se:
+
+- saldo disponível;
+- total de gastos;
+- gastos por categoria;
+- histórico financeiro;
+- previsibilidade de gastos futuros.
+
+## Síntese da pesquisa
+
+Com base nos dados, identificamos quatro necessidades principais:
+
+1. o usuário deseja registrar suas movimentações com o mínimo de etapas;
+2. as informações financeiras devem ser apresentadas de maneira simples e compreensível;
+3. gráficos, listas e resumos ajudam a entender melhor os gastos;
+4. existe interesse em acompanhar e prever impactos de gastos futuros.
+
+Esses achados orientam diretamente a concepção da interface e das principais funcionalidades do aplicativo Organize.

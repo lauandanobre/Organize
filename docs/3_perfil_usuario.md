@@ -1,56 +1,101 @@
-# Perfil do Usuário
+# Perfil do usuário
 
-> **_NOTE:_**: Esta entrega consolida e sintetiza os dados coletados na etapa de Pesquisa e Coleta de Dados com Usuários, caracterizando o público-alvo real antes de criar as personas (arquétipos fictícios). Aqui ainda não há personagem — são dados e padrões observados nos participantes reais.
+## 1) Perfil demográfico
 
-1) **Perfil Demográfico**
-- Faixa etária, gênero, escolaridade, ocupação, localização geográfica e outros dados demográficos relevantes ao produto/serviço.
+A pesquisa foi conduzida com 8 participantes e revelou uma amostra majoritariamente jovem e ativa profissionalmente.
 
-2) **Perfil Comportamental e Tecnológico**
-- Nível de familiaridade com tecnologia (baixo/médio/alto) e dispositivos mais usados.
-- Frequência e contexto de uso de produtos/serviços similares.
-- Hábitos relevantes para o produto ou serviço em questão.
+- faixa etária predominante: 18 a 24 anos;
+- 75% dos participantes estão nessa faixa;
+- 12,5% estão na faixa de 25 a 34 anos;
+- 12,5% estão na faixa de 35 a 44 anos;
+- perfil principal: pessoas que vivem em rotina movimentada, com estudo e/ou trabalho, e que precisam acompanhar gastos diários.
 
-3) **Necessidades e Dores Consolidadas**
-- Sintetize (não repita bruto) os principais achados da pesquisa: padrões que se repetiram entre os participantes, necessidades não atendidas e frustrações recorrentes.
-- Aponte, para cada necessidade/dor, quantos participantes (aproximadamente) a mencionaram — isso embasa a priorização nas próximas etapas.
+A maioria dos participantes utiliza o celular como principal dispositivo para acessar serviços digitais e buscar informações financeiras.
 
-4) **Segmentação (se aplicável)**
-- Caso os dados revelem mais de um grupo de usuários com necessidades distintas, descreva cada segmento e o que os diferencia.
-- Indique qual(is) segmento(s) será(ão) priorizado(s) como personas primárias.
+## 2) Perfil comportamental e tecnológico
 
----
+Os usuários pesquisados demonstram familiaridade com tecnologia e usam aplicativos em seu cotidiano, especialmente o celular. O comportamento observado mostra que:
 
-## Exemplo de entrega
+- todos os participantes acompanham suas finanças em algum nível;
+- o uso de aplicativos bancários e ferramentas de organização é recorrente;
+- a rotina de gestão financeira é feita principalmente em momentos rápidos do dia;
+- as pessoas valorizam soluções práticas, com poucos passos e leitura rápida;
+- existe um interesse crescente em ferramentas que ajudem a organizar e entender gastos sem exigir muito esforço.
 
-> Continuação do exemplo fictício do app "Estuda+" (grupos de estudo universitários), consolidando os dados coletados na etapa de pesquisa. Copie a estrutura, não o conteúdo.
+## 3) Necessidades e dores consolidadas
 
-### 1) Perfil Demográfico
+Os principais resultados da pesquisa indicam que os usuários não buscam apenas registrar despesas, mas também entender o que está acontecendo no orçamento.
 
-- Idade: 18 a 24 anos.
-- Escolaridade: cursando graduação (2º ao 6º semestre).
-- Ocupação: a maioria concilia estudo com estágio ou trabalho meio período (6 de 8 entrevistados).
-- Localização: região metropolitana, moradia com a família ou república estudantil.
-
-### 2) Perfil Comportamental e Tecnológico
-
-- Alta familiaridade com tecnologia: todos usam smartphone diariamente e ao menos um app de mensagens em grupo (WhatsApp ou Discord).
-- Uso de produtos similares: 7 de 8 entrevistados já tentaram organizar grupo de estudo por WhatsApp; nenhum usou um app dedicado a isso.
-- Contexto de uso predominante: à noite, entre aulas, e na semana anterior às provas.
-
-### 3) Necessidades e Dores Consolidadas
-
-| Necessidade/Dor | Frequência aproximada | Evidência |
+| Necessidade / Dor | Frequência aproximada | Observação |
 | :---- | :---- | :---- |
-| Dificuldade em combinar horário comum entre os membros | 7 de 8 entrevistados | "A gente ficava mandando mensagem por dias até fechar um horário" (E4) |
-| Grupo perde engajamento após 1-2 semanas | 6 de 8 entrevistados | Confirmado também nas respostas do questionário (68% relataram abandono do grupo) |
-| Falta de divisão clara de quem estuda qual tópico | 5 de 8 entrevistados | "Todo mundo estudava a mesma coisa e a gente repetia esforço" (E2) |
-| Preocupação com exposição de dados pessoais em grupos abertos | 3 de 8 entrevistados | Mencionado espontaneamente nas entrevistas |
+| Registro rápido de despesas e receitas | 100% | O fluxo simples foi destacado como essencial. |
+| Poucas etapas para registrar movimentações | 62,5% | Usuários evitam ferramentas que exigem preenchimento excessivo. |
+| Relatórios claros | 62,5% | Há preocupação com a leitura dos dados financeiros. |
+| Busca rápida por informações | 62,5% | Usuários desejam localizar dados sem perder tempo. |
+| Possibilidade de personalização | 62,5% | Há interesse em adaptar categorias e filtros ao perfil pessoal. |
+| Acompanhamento de gastos por categoria | 37,5% | Situação diretamente relacionada à organização e ao planejamento. |
+| Visualização de resumo financeiro | 62,5% | Gráficos e listas ajudam a compreender melhor os gastos. |
 
-### 4) Segmentação
+## 4) Informações mais importantes para os usuários
 
-Foram identificados dois perfis distintos entre os participantes:
+Os participantes atribuíram grande valor às seguintes informações:
 
-- **Organizador(a)** — toma a iniciativa de criar o grupo e cobrar andamento (2 de 8 entrevistados). Alta motivação, frustra-se com falta de resposta dos demais.
-- **Participante** — entra no grupo já formado, engaja-se enquanto há cobrança externa (6 de 8 entrevistados). Motivação mais dependente do grupo.
+- saldo disponível;
+- total de gastos;
+- gastos por categoria;
+- histórico de movimentações;
+- percepção de consumo ao longo do mês.
 
-Segmento priorizado como persona primária: **Participante**, por representar a maioria do público-alvo e concentrar as dores mais citadas (abandono do grupo, falta de divisão de tópicos).
+Esses elementos foram considerados centrais para a tomada de decisão e para uma visão mais clara da própria situação financeira.
+
+## 5) Formas de visualização preferidas
+
+As formas de visualização mais escolhidas foram:
+
+- lista de movimentações — 62,5%;
+- gráficos — 62,5%;
+- resumos numéricos — 37,5%;
+- tabelas — 37,5%;
+- calendário — 25%.
+
+Isso mostra que os usuários preferem uma combinação de visão objetiva e análise visual, sem ficar sobrecarregados por excesso de dados.
+
+## 6) Principais dificuldades percebidas
+
+As maiores dificuldades apontadas pelos participantes foram:
+
+- registrar compras e pagamentos;
+- acompanhar diferentes tipos de despesas;
+- organizar despesas por categorias;
+- planejar gastos futuros.
+
+Todas essas dificuldades foram citadas por 37,5% dos participantes. O problema principal não é apenas registrar uma despesa, mas também interpretar o conjunto de movimentações e utilizá-las para planejamento financeiro.
+
+## 7) Síntese das necessidades principais
+
+A partir dos resultados obtidos, foram identificadas as necessidades principais do público:
+
+1. o usuário deseja registrar movimentações com o mínimo possível de etapas;
+2. as informações financeiras precisam ser apresentadas de forma simples e compreensível;
+3. gráficos, listas e resumos são importantes para compreender os gastos;
+4. existe interesse em acompanhar e prever os impactos dos gastos futuros.
+
+## 8) Segmentação
+
+Foram identificados dois perfis de comportamento distintos entre os participantes:
+
+### Segmento 1 — Usuário prático e orientado a rapidez
+
+- busca facilidade e agilidade;
+- não quer preencher muitos campos;
+- valoriza leitura rápida e baixa fricção de uso;
+- prioriza funcionalidade e acessibilidade.
+
+### Segmento 2 — Usuário planejador e observador de dados
+
+- busca entender melhor a situação financeira;
+- valoriza relatórios e organização detalhada;
+- gosta de analisar gastos por categoria e comparar períodos;
+- deseja ter controle e previsibilidade.
+
+A partir dessa segmentação, foi possivel identificar personas para representar melhor os principais comportamentos observados no público-alvo.
