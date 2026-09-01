@@ -4,14 +4,20 @@ Projeto apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), 
 
 Este projeto é desenvolvido pelos seguintes alunos:
 
-- Lauanda
+- Lauanda Nobre
 - Lars Tatebe Osiro
 
 ## Conhecendo o problema
 
+### Descrição
+O projeto Organize é uma solução de gestão de finanças pessoais voltada para ajudar pessoas a controlar receitas, despesas, saldo e hábitos de consumo de forma simples e intuitiva. A proposta foi desenvolvida para reduzir a dificuldade de acompanhar o dinheiro no cotidiano, especialmente em rotinas aceleradas, onde o usuário precisa registrar e entender seus gastos rapidamente.
+
+### Objetivo
+O objetivo do projeto é criar uma aplicação que permita ao usuário organizar suas finanças pessoais de maneira prática, com uma interface clara, acessível e eficiente. A solução busca facilitar o registro de movimentações, a visualização do saldo e o entendimento dos gastos, promovendo maior controle financeiro e tomada de decisão consciente.
+
 Sobre o produto ou serviço que seu grupo está desenvolvendo, responda:
-- Apresente uma breve descrição.
-- Apresente o objetivo. 
+- Apresente uma breve descrição. __(feito)__
+- Apresente o objetivo. __(feito)__
 - Apresente o usuário final.
 - Apresente os principais benefícios para o usuários.
 - Apresente as funcionalidades.
