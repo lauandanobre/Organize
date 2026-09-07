@@ -1,97 +1,105 @@
 # Análise de tarefas
 
-A análise de tarefas do projeto Organize foi estruturada a partir das necessidades identificadas na pesquisa com usuários, no perfil do usuário e nas personas descritas em [2_pesquisa_usuarios.md](2_pesquisa_usuarios.md), [3_perfil_usuario.md](3_perfil_usuario.md) e [4_personas.md](4_personas.md). O objetivo é modelar como o usuário realiza as ações mais importantes dentro da aplicação, com foco em rapidez, simplicidade e clareza na leitura das informações financeiras.
+A análise de tarefas do projeto Organize foi estruturada a partir das necessidades identificadas na pesquisa com usuários, no perfil do usuário e nas personas descritas em [2_pesquisa_usuarios.md](2_pesquisa_usuarios.md), [3_perfil_usuario.md](3_perfil_usuario.md) e [4_personas.md](4_personas.md). O objetivo é modelar como o usuário interage com a aplicação, com foco em rapidez, simplicidade e clareza na leitura das informações financeiras. Observação importante: o aplicativo integra-se com a API de Open Finance para importar automaticamente transações bancárias — o usuário não cadastra gastos individualmente em nenhum momento; sua ação principal é revisar, categorizar ou ajustar transações importadas.
 
-## 1) HTA — Registrar uma despesa rápida
+## 1) HTA — Revisar e categorizar transações importadas
 
-**Funcionalidade**: permitir ao usuário registrar uma nova despesa em poucos passos, sem exigir muitos campos ou excesso de informações.
+**Funcionalidade**: devido à integração com a API de Open Finance, as transações são importadas automaticamente; o usuário não cadastra gastos individualmente. O fluxo principal consiste em revisar, categorizar e, quando necessário, ajustar ou excluir transações importadas.
 
 ```mermaid
 graph TD
-    A["0. Registrar despesa<br/>1>2>3>4"] --> B["1. Abrir fluxo de registro<br/>1>2"]
-    A --> C["2. Informar dados da despesa<br/>1+2+3"]
-    A --> D["3. Confirmar a movimentação"]
-    A --> E["4. Visualizar o registro no histórico<br/>1>2"]
-    B --> B1["1.1 Tocar no botão +"]
-    B --> B2["1.2 Escolher opção 'Despesa'"]
-    C --> C1["2.1 Inserir valor"]
-    C --> C2["2.2 Selecionar categoria"]
-    C --> C3["2.3 Informar data e descrição"]
-    E --> E1["4.1 Confirmar que a despesa foi salva"]
-    E --> E2["4.2 Acessar histórico de movimentações"]
+  A["0. Revisar transações importadas<br/>1>2>3>4"] --> B["1. Abrir lista de transações importadas<br/>1>2"]
+  A --> C["2. Selecionar ou filtrar transações<br/>1+2+3"]
+  A --> D["3. Categorizar / ajustar / confirmar"]
+  A --> E["4. Visualizar no histórico e relatórios<br/>1>2"]
+  B --> B1["1.1 Abrir tela 'Transações' ou 'Importações'"]
+  B --> B2["1.2 Abrir notificação de importação (atalho)"]
+  C --> C1["2.1 Selecionar transação da lista"]
+  C --> C2["2.2 Aplicar filtros (data, valor, conta)"]
+  C --> C3["2.3 Agrupar por importação ou conta"]
+  D --> D1["3.1 Escolher categoria"]
+  D --> D2["3.2 Editar descrição / data (se necessário)"]
+  D --> D3["3.3 Marcar como recorrente ou ignorar"]
+  E --> E1["4.1 Confirmar que a transação está categorizada"]
+  E --> E2["4.2 Ver transação nos relatórios e histórico"]
 ```
 
-- **Plano 0 (1>2>3>4)**: o usuário abre o registro, informa os dados, confirma e visualiza o item salvo.
-- **Plano 1 (1>2)**: primeiro o usuário acessa a ação de registro e depois escolhe o tipo de movimentação.
-- **Plano 2 (1+2+3)**: valor, categoria e descrição podem ser preenchidos em qualquer ordem, desde que o usuário conclua todos os campos principais.
-- **Plano 4 (1>2)**: a movimentação é salva e, em seguida, o usuário pode consultar o histórico.
+- **Plano 0 (1>2>3>4)**: transações são importadas, o usuário abre a lista, seleciona e categoriza/ajusta, e confirma a visualização nos relatórios.
+- **Plano 1 (1>2)**: o usuário pode acessar a lista de importações via a tela de transações ou via uma notificação/atalho de importação.
+- **Plano 2 (1+2+3)**: selecionar, filtrar e categorizar podem ocorrer em ordem flexível, mas a categorização é o objetivo central.
 
 ### Explicação da funcionalidade
 
-Essa tarefa representa a ação mais crítica para Bruna, persona primária do projeto. A funcionalidade deve permitir que o usuário cadastre um gasto em poucos segundos, reduzindo atrito e evitando a sensação de excesso de preenchimento. Para a jornada de uso, essa etapa está diretamente relacionada à necessidade de agilidade no registro financeiro.
+Com a integração Open Finance, a necessidade de digitar cada gasto desaparece. O foco da experiência é reduzir o atrito na revisão das importações, oferecer categorização rápida e sugestões automáticas, e permitir ajustes mínimos quando necessário. Esse fluxo atende principalmente à Bruna, que prioriza agilidade.
 
 ---
 
 ## 2) HTA — Consultar saldo e gastos por categoria
 
-**Funcionalidade**: permitir ao usuário acessar rapidamente o saldo atual, visualizar seus gastos e entender como o dinheiro está sendo distribuído por categoria.
+**Funcionalidade**: permitir ao usuário acessar rapidamente o saldo atual, visualizar seus gastos e entender como o dinheiro está sendo distribuído por categoria. O HTA deixa explícito que há pelo menos duas formas de acesso ao resumo financeiro (ex.: abrir o app ou usar um atalho/visor rápido), oferecendo caminhos alternativos de entrada.
 
 ```mermaid
 graph TD
-    A["0. Consultar resumo financeiro<br/>1>2>3"] --> B["1. Acessar dashboard principal"]
-    A --> C["2. Verificar saldo e gastos<br/>1+2"]
-    A --> D["3. Filtrar por categoria ou período<br/>1/2"]
-    B --> B1["1.1 Abrir tela inicial do app"]
-    C --> C1["2.1 Visualizar saldo disponível"]
-    C --> C2["2.2 Ver o total de gastos"]
-    D --> D1["3.1 Filtrar por categoria"]
-    D --> D2["3.2 Escolher período (semana/mês)"]
+  A["0. Consultar resumo financeiro<br/>1>2>3"] --> B["1. Acessar dashboard principal (duas opções)"]
+  A --> C["2. Verificar saldo e gastos<br/>1+2"]
+  A --> D["3. Filtrar por categoria ou período<br/>1/2"]
+  B --> B1["1.1 Abrir tela inicial do app"]
+  B --> B2["1.2 Usar atalho/visão rápida (widget, notificação, resumo)"]
+  C --> C1["2.1 Visualizar saldo disponível"]
+  C --> C2["2.2 Ver o total de gastos"]
+  D --> D1["3.1 Filtrar por categoria"]
+  D --> D2["3.2 Escolher período (semana/mês)"]
 ```
 
-- **Plano 0 (1>2>3)**: o usuário entra na tela principal, verifica o resumo e, se necessário, aplica filtros.
-- **Plano 2 (1+2)**: saldo e gastos são exibidos no mesmo painel, sem necessidade de navegação extra.
-- **Plano 3 (1/2)**: o usuário escolhe entre visualizar por categoria ou por período, não necessariamente os dois ao mesmo tempo.
+- **Plano 0 (1>2>3)**: o usuário acessa o resumo por qualquer uma das duas rotas disponíveis, verifica os dados e aplica filtros se desejar.
+- **Plano 2 (1+2)**: saldo e gastos são apresentados no mesmo painel, com destaque para a distribuição por categoria.
+- **Plano 3 (1/2)**: o usuário pode alternar entre visão por categoria e visão por período.
 
 ### Explicação da funcionalidade
 
-Essa tarefa representa a necessidade de Antônio, persona primária do projeto, de interpretar o comportamento financeiro de forma clara e objetiva. A interface deve facilitar a leitura de informações essenciais, como saldo disponível, total de gastos e gastos por categoria, sem sobrecarregar o usuário com excesso de detalhe.
+Essa tarefa representa a necessidade de Antônio, persona primária do projeto, de interpretar o comportamento financeiro de forma clara e objetiva. Garantir múltiplos pontos de entrada para o dashboard melhora a rapidez de acesso e a adaptação a diferentes cenários de uso (abrir app versus checar um resumo rápido).
 
 ---
 
-## 3) GOMS — Registrar despesa rápida
+## 3) GOMS — Revisar e categorizar transações importadas
 
-**Funcionalidade**: concluir o fluxo de cadastro de uma despesa em poucos passos.
+**Funcionalidade**: revisar transações importadas automaticamente via Open Finance, categorizá-las e aplicar ajustes mínimos.
 
 ```text
-GOAL 0: registrar uma despesa
+GOAL 0: revisar e categorizar transações importadas
 
-  GOAL 1: abrir o fluxo de cadastro
-    METHOD 1.A: usar botão de ação principal
-      OP. 1.A.1: tocar no botão "+"
-      OP. 1.A.2: selecionar a opção "Despesa"
+  GOAL 1: acessar lista de transações importadas
+    METHOD 1.A: abrir aplicativo
+      OP. 1.A.1: abrir app (tela inicial)
+    METHOD 1.B: usar atalho/visor rápido
+      OP. 1.B.1: abrir resumo via widget/atalho ou notificação
 
-  GOAL 2: preencher os dados da despesa
-    METHOD 2.A: preencher manualmente
-      OP. 2.A.1: digitar o valor da despesa
-      OP. 2.A.2: escolher a categoria
-      OP. 2.A.3: inserir a data
-      OP. 2.A.4: escrever uma descrição breve
+  GOAL 2: selecionar transação para revisão
+    METHOD 2.A: pesquisar/filtrar
+      OP. 2.A.1: aplicar filtro por data/conta/valor
+      OP. 2.A.2: tocar na transação
 
-  GOAL 3: salvar a movimentação
-    METHOD 3.A: confirmar o registro
-      OP. 3.A.1: tocar no botão "Salvar"
-      OP. 3.A.2: verificar que a despesa aparece no histórico
+  GOAL 3: categorizar ou ajustar
+    METHOD 3.A: usar sugestão automática ou escolher manualmente
+      OP. 3.A.1: aceitar sugestão de categoria
+      OP. 3.A.2: editar categoria/descrição se necessário
+      OP. 3.A.3: marcar como repetitiva/ignorar
+
+  GOAL 4: confirmar e visualizar
+    METHOD 4.A: salvar alteração
+      OP. 4.A.1: confirmar alteração
+      OP. 4.A.2: verificar presença no histórico/relatório
 ```
 
 ### Explicação do GOMS
 
-O método A representa a rotina mais direta para um usuário que deseja registrar um gasto sem perder tempo. O modelo mostra a sequência lógica das operações, reforçando a ideia de simplicidade e rapidez, que foi destacada na pesquisa como característica prioritária na experiência do usuário.
+O GOMS foi adaptado para refletir que as transações chegam pela integração Open Finance. O papel do usuário é revisar e confirmar categorização — não inserir dados financeiros manualmente. Foram adicionadas duas formas de acessar a lista de transações (abrir app ou usar atalho/visão rápida) para manter alternativas de entrada no fluxo.
 
 ---
 
 ## 4) GOMS — Visualizar resumo financeiro
 
-**Funcionalidade**: consultar o saldo e entender onde o dinheiro está sendo gasto.
+**Funcionalidade**: consultar o saldo e entender onde o dinheiro está sendo gasto. Incluir pelo menos duas formas de acessar o dashboard para refletir diferentes hábitos de uso.
 
 ```text
 GOAL 0: consultar o resumo financeiro
@@ -99,7 +107,9 @@ GOAL 0: consultar o resumo financeiro
   GOAL 1: abrir o dashboard principal
     METHOD 1.A: acessar a tela inicial
       OP. 1.A.1: abrir o aplicativo
-      OP. 1.A.2: verificar a tela inicial
+      OP. 1.A.2: navegar para o dashboard
+    METHOD 1.B: usar atalho/visão rápida
+      OP. 1.B.1: abrir resumo via widget/atalho
 
   GOAL 2: interpretar as informações principais
     METHOD 2.A: analisar saldo e gastos
@@ -117,7 +127,7 @@ GOAL 0: consultar o resumo financeiro
 
 ### Explicação do GOMS
 
-Este modelo mostra as ações que o usuário realiza para responder uma pergunta simples: “para onde o meu dinheiro está indo?”. O processo enfatiza a importância de telas bem organizadas, gráficos claros e filtros de consulta rápidos, pois esses elementos diretamente atendem às dores observadas em [3_perfil_usuario.md](3_perfil_usuario.md).
+O modelo enfatiza múltiplos pontos de entrada para o dashboard (abrir app ou usar um atalho/visão rápida). Isso garante que o usuário possa consultar rapidamente o resumo financeiro ou realizar uma revisão mais detalhada ao abrir o aplicativo completo.
 
 ---
 
