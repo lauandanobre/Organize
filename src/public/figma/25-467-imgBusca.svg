@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Busca" opacity="0.5">
+<path id="Cabo" d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke="black"/>
+<mask id="stroke0_0_4" fill="white">
+<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"/>
+</mask>
+<path id="Lente" d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke-width="4" stroke="black" mask="url(#stroke0_0_4)"/>
+</g>
+</svg>

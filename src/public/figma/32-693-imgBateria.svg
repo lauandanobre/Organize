@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24.33" height="11.33" viewBox="0 0 24.33 11.33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Bateria" clip-path="url(#clip0_0_28)">
+<path id="Contorno" opacity="0.35" d="M0.5 0.5H21.5V10.83H0.5V0.5Z" stroke="black"/>
+<path id="Terminal" opacity="0.4" d="M23 3.67V7.67C23.8059 7.33122 24.33 6.54313 24.33 5.67C24.33 4.79687 23.8059 4.00878 23 3.67" fill="black"/>
+<path id="Carga" d="M2 2H20V9.33H2V2Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_0_28">
+<rect width="24.33" height="11.33" fill="white"/>
+</clipPath>
+</defs>
+</svg>
